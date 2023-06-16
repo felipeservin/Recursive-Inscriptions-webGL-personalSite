@@ -1,108 +1,159 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Felipe Servin - Blockchain &amp; Bitcoin Builder</title>
-    <meta name="description" content="Felipe Servin - Bitcoin Builder">
-    <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://ord.io/content/835b46fd3b935edb23757fdcf03ad357c44ec72e0f4dafd19ef7740ea367053fi0">
-    <style>
-      * {
-        user-select: none;
-      }
+<!-- This file is not inscription-ready, there are some things you'll want to change first.
 
-      html,
-      body {
-        overflow: hidden;
-        background-color: #FF4900;
-        margin: 0;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-      }
+    1. Open this file in your computer to be sure it's working as you want with your info
+    2. When you are ready, remove all the strings "https://ord.io" from this code
+    3. As a final step, I recommend using a service to minify this file to reduce its filesize so
+    that inscribing will be as cheap as possible and inscribe.
 
-      canvas {
-        width: 100%;
-        height: 100%;
-      }
-
-      .container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 0;
-        margin: 35px;
-      }
-
-      .container-inner {
-        pointer-events: none;
-        mix-blend-mode: exclusion;
-        -webkit-mix-blend-mode: exclusion;
-      }
-
-      .container h1 {
-        color: #00ff67;
-        font-size: 4.5rem;
-        line-height: 4.3rem;
-        letter-spacing: -0.15rem;
-        font-family: 'Alata', sans-serif;
-        margin-bottom: 1rem;
-      }
-
-      .container p {
-        font-family: sans-serif;
-        pointer-events: none;
-      }
-
-      .container p em {
-        font-weight: bold;
-      }
-
-      .social-links img {
-        width: 50px;
-        pointer-events: auto;
-      }
-
-      .sticky-footer {
-        position: sticky;
-        bottom: 6px;
-        text-align: center;
-        font-family: 'Alata', sans-serif;
-        font-size: 0.8rem;
-      }
-      .sticky-footer a {
-        text-decoration: none;
-      }
-      .sticky-footer a:visited {
-        color: inherit;
-      }
-    </style>
-    
-
+    Note: Inscribe this file as a HTML file! not as text.
   
-  </head>
-  <body>
-    <canvas></canvas>
+    Credits: https://www.twitter.com/fservin Drop me some love and follow for more Bitcoin experiments
 
-    <div class="container">
-      <div class="container-inner">
-        <h1>Hello<br>I'm Felipe<br>Servin</h1>
-      </div>
-      <p>Full Stack Bitcoin/Blockchain <em><strong>Builder,</strong></em> Experienced Product Architect, and Aspiring System Disruptor.</p>
-      <p class="social-links">
-        <a href="https://twitter.com/fservin" target="_blank"><img src="https://ord.io/content/434a0f224bf09495794e1477b4ab3fe3469093fa45fe50d25e9aa1ec947da545i0" width="50"></a>
-        <a href="https://www.linkedin.com/in/fservin" target="_blank"><img src="https://ord.io/content/1be2c104bd801d080d8e2995a889eb8d69b820e59b37c5affcbee15cf86cfd7di0" width="50"></a>
-      </p>
-    </div>
+  -->
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <!-- Give your website a metadata title and description -->
+        <title>Felipe Servin - Blockchain &amp; Bitcoin Builder</title>
+        <meta name="description" content="Felipe Servin - Bitcoin Builder">
+          <!-- Give your website a favicon, the little icon on each tab in the browser. You can delete this line if you don't like my icon -->
+        <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://ord.io/content/835b46fd3b935edb23757fdcf03ad357c44ec72e0f4dafd19ef7740ea367053fi0">
 
-    <div class="sticky-footer">
-      [Click and move around, Press P or Space]  <a href="https://github.com/felipeservin/Recursive-Inscriptions-webGL-personalSite/" target="_blank">(Source)</a><br>
-      Built on Bitcoin <img src="https://ord.io/content/b491b66c3d3835f0ee10cf7dac2966da953d3c53cc28f021637cbe9eeb249d8bi0" width="16">
-    </div>
-
-    <script src="https://ord.io/content/3af8500b444c7f589fca666fe317e1f95c7226d49dc23f8a4b86093f01f3e7adi0"></script>
+        <!-- Feel free to modify the colors or add any additional CSS here -->
+        <style>
+          * {
+            user-select: none;
+          }
     
+          html,
+          body {
+            overflow: hidden;
+            background-color: #FF4900;
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+          }
     
-  </body>
-</html>
+          canvas {
+            width: 100%;
+            height: 100%;
+          }
+    
+          .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            margin: 35px;
+          }
+    
+          .container-inner {
+            pointer-events: none;
+            mix-blend-mode: exclusion;
+            -webkit-mix-blend-mode: exclusion;
+          }
+    
+          .container h1 {
+            color: #00ff67; /* This is the color of the main title, which is your name. Use a color that is 'contrary' to the color of your background for better results. */
+            font-size: 4.5rem;
+            line-height: 4.3rem;
+            letter-spacing: -0.15rem;
+            font-family: 'Alata', sans-serif;
+            margin-bottom: 1rem;
+          }
+    
+          .container p {
+            font-family: sans-serif;
+            pointer-events: none;
+          }
+    
+          .container p em {
+            font-weight: bold;
+          }
+    
+          .social-links img {
+            width: 50px;
+            pointer-events: auto;
+          }
+    
+          .sticky-footer {
+            position: sticky;
+            bottom: 6px;
+            text-align: center;
+            font-family: 'Alata', sans-serif;
+            font-size: 0.8rem;
+          }
+          .sticky-footer a {
+            text-decoration: none;
+          }
+          .sticky-footer a:visited {
+            color: inherit;
+          }
+        </style>
+        
+    
+      
+      </head>
+      <body>
+        <!-- This canvas is the one making the magic with visuals -->
+        <canvas></canvas>
+    
+        <div class="container">
+          <div class="container-inner">
+            <!-- Enter your name below -->
+            <h1>Hello<br>I'm Felipe<br>Servin</h1>
+          </div>
+          <!-- You can include here your tagline or title. If you use the em tag to highlight a word, consider to leave a space before and after that word for better looking results -->
+          <p>Full Stack Bitcoin/Blockchain <em><strong>Builder,</strong></em> Experienced Product Architect, and Aspiring System Disruptor.</p>
+          <p class="social-links">
+            <!-- Be sure to edit the links to your social media accounts. You can keep the images as-is if you like them already -->
+            <a href="https://twitter.com/fservin" target="_blank"><img src="https://ord.io/content/434a0f224bf09495794e1477b4ab3fe3469093fa45fe50d25e9aa1ec947da545i0" width="50"></a>
+            <a href="https://www.linkedin.com/in/fservin" target="_blank"><img src="https://ord.io/content/1be2c104bd801d080d8e2995a889eb8d69b820e59b37c5affcbee15cf86cfd7di0" width="50"></a>
+          </p>
+        </div>
+        <!-- This is the footer, I'd love if you kept it but ultimately you can do whatever you like. Bitcoin is permissionless after all! -->
+        <div class="sticky-footer">
+          [Click and move around, Press P or Space]  <a href="https://github.com/felipeservin/Recursive-Inscriptions-webGL-personalSite/" target="_blank">(Source)</a><br>
+          Built on Bitcoin <img src="https://ord.io/content/b491b66c3d3835f0ee10cf7dac2966da953d3c53cc28f021637cbe9eeb249d8bi0" width="16">
+        </div>
+    
+        <script src="https://ord.io/content/3af8500b444c7f589fca666fe317e1f95c7226d49dc23f8a4b86093f01f3e7adi0"></script>
+        <script>
+          // Simulation code
+
+             config = {
+                BACK_COLOR: { r: 210, g: 74, b: 0 }, // Update this color to have different backgorund in your simulation. 
+                TRANSPARENT: false, //make the whole background transparent if it is "true".
+                SIM_RESOLUTION: 128,
+                DYE_RESOLUTION: 1024,
+                CAPTURE_RESOLUTION: 512,
+                DENSITY_DISSIPATION: 0.6,
+                VELOCITY_DISSIPATION: 0.1,
+                PRESSURE: 0.63,
+                PRESSURE_ITERATIONS: 20,
+                CURL: 3,
+                SPLAT_RADIUS: 1,
+                SPLAT_FORCE: 6000,
+                SHADING: true,
+                COLORFUL: false,
+                COLOR_UPDATE_SPEED: 10,
+                PAUSED: false,
+                BLOOM: true,
+                BLOOM_ITERATIONS: 8,
+                BLOOM_RESOLUTION: 256,
+                BLOOM_INTENSITY: 0.8,
+                BLOOM_THRESHOLD: 0.6,
+                BLOOM_SOFT_KNEE: 0.7,
+                SUNRAYS: true,
+                SUNRAYS_RESOLUTION: 196,
+                SUNRAYS_WEIGHT: 1.0,
+            }
+        </script>
+        
+      </body>
+    </html>
+    
